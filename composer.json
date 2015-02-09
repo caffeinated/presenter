@@ -18,7 +18,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Caffeinated\\Presenter\\": "src/Caffeinated/Presenter"
+            "Caffeinated\\Presenter\\": "src/Caffeinated/Presenter/"
         }
     },
     "extra": {
