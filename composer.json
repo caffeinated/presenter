@@ -11,14 +11,14 @@
     ],
     "require": {
         "php": ">=5.4.0",
-        "illuminate/support": ">=5.0.0"
+        "illuminate/support": "~5.0"
     },
     "require-dev": {
         "mockery/mockery": "dev-master"
     },
     "autoload": {
         "psr-4": {
-            "Caffeinated\\Presenter": "src/Caffeinated/Presenter"
+            "Caffeinated\\Presenter\\": "src/Caffeinated/Presenter"
         }
     },
     "extra": {
