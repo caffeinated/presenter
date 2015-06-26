@@ -39,7 +39,7 @@ Which works, but *every* time you need to display a user's full name, you'd have
 <h1>Hello, {{ $user->present()->fullName() }}!</h1>
 ```
 
-Isn't that much more readable than the previous example? Now you may argue that you could add this type of logic directly to your model class, *which you could*, but then you'll find that your model classes are riddled with methods that are manipulating view logic. I don't believe model entities should be responsible for this. There **only job** is to pull the requested data from the database and hand it over. *That's it.*
+Isn't that much more readable than the previous example? Now you may argue that you could add this type of logic directly to your model class, *which you could*, but then you'll find that your model classes are riddled with methods that are manipulating view logic. I don't believe model entities should be responsible for this. Their **only job** is to pull the requested data from the database and hand it over. *That's it.*
 
 Usage
 -----
