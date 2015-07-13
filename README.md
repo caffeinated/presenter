@@ -1,5 +1,5 @@
-Caffeinated Presenters
-======================
+Caffeinated Presenter
+=====================
 [![Laravel 5.0](https://img.shields.io/badge/Laravel-5.0-orange.svg?style=flat-square)](http://laravel.com)
 [![Laravel 5.1](https://img.shields.io/badge/Laravel-5.1-orange.svg?style=flat-square)](http://laravel.com)
 [![Source](http://img.shields.io/badge/source-caffeinated/presenter-blue.svg?style=flat-square)](https://github.com/caffeinated/presenter)
@@ -27,12 +27,12 @@ Begin by installing the package through Composer. Depending on what version of L
 
 #### Laravel 5.0.x
 ```
-composer require caffeinated/presenters=~1.0
+composer require caffeinated/presenter=~1.0
 ```
 
 #### Laravel 5.1.x
 ```
-composer require caffeinated/presenters=~2.0
+composer require caffeinated/presenter=~2.0
 ```
 
 And that's it! With your coffee in reach, start building out some awesome presenters!
@@ -40,12 +40,12 @@ And that's it! With your coffee in reach, start building out some awesome presen
 Usage
 -----
 ### 1. Pull in trait
-Within your model, simply pull in the `Caffeinated\Presenters\Traits\PresentableTrait` trait, which will automatically instantiate the Caffeinated Presenter class.
+Within your model, simply pull in the `Caffeinated\Presenter\Traits\PresentableTrait` trait, which will automatically instantiate the Caffeinated Presenter class.
 
 ```php
 ...
 
-use Caffeinated\Presenters\Traits\PresentableTrait;
+use Caffeinated\Presenter\Traits\PresentableTrait;
 
 class Example extends Eloquent
 {
@@ -61,7 +61,7 @@ Define a protected `$presenter` variable pointing to the namespace of your prese
 ```php
 ...
 
-use Caffeinated\Presenters\Traits\PresentableTrait;
+use Caffeinated\Presenter\Traits\PresentableTrait;
 
 class Example extends Eloquent
 {
@@ -74,13 +74,13 @@ class Example extends Eloquent
 ```
 
 ### 3. Create your presenter class
-Create a new class as defined within your model earlier - in our case we'll create a new directory within the `app` directory called `Presenters`, and create a `Page` file. Presenters should extend the abstract `Caffeinated\Presenters\Presenter` class.
+Create a new class as defined within your model earlier - in our case we'll create a new directory within the `app` directory called `Presenters`, and create a `Page` file. Presenters should extend the abstract `Caffeinated\Presenter\Presenter` class.
 
 ```php
 <?php
 namespace App\Presenters;
 
-use Caffeinated\Presenters\Presenter;
+use Caffeinated\Presenter\Presenter;
 
 class Page extends Presenter
 {
@@ -95,7 +95,7 @@ Your model instance is passed through to your presenter class automatically, and
 <?php
 namespace App\Presenters;
 
-use Caffeinated\Presenters\Presenter;
+use Caffeinated\Presenter\Presenter;
 
 class Page extends Presenter
 {
