@@ -1,7 +1,7 @@
 Caffeinated Presenter
 =====================
-[![Laravel 5.0](https://img.shields.io/badge/Laravel-5.0-orange.svg?style=flat-square)](http://laravel.com)
 [![Laravel 5.1](https://img.shields.io/badge/Laravel-5.1-orange.svg?style=flat-square)](http://laravel.com)
+[![Laravel 5.2](https://img.shields.io/badge/Laravel-5.2-orange.svg?style=flat-square)](http://laravel.com)
 [![Source](http://img.shields.io/badge/source-caffeinated/presenter-blue.svg?style=flat-square)](https://github.com/caffeinated/presenter)
 [![License](http://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square)](https://tldrlegal.com/license/mit-license)
 
@@ -23,14 +23,8 @@ Isn't that much more readable than the previous example? Now you may argue that 
 
 Quick Installation
 ------------------
-Begin by installing the package through Composer. Depending on what version of Laravel you are using (5.0 or 5.1), you'll want to pull in the `~1.0` or `~2.0` release, respectively:
+Begin by installing the package through Composer.
 
-#### Laravel 5.0.x
-```
-composer require caffeinated/presenter=~1.0
-```
-
-#### Laravel 5.1.x
 ```
 composer require caffeinated/presenter=~2.0
 ```
